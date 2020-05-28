@@ -88,7 +88,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <TryCatch DisplayName="1.1 Get Outlook mail message and mail details" sap:VirtualizedContainerService.HintSize="414,1214" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch DisplayName="1.1 Get Outlook mail message and mail details" sap:VirtualizedContainerService.HintSize="418,515" sap2010:WorkflowViewState.IdRef="TryCatch_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -96,7 +96,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <TryCatch.Try>
-            <Sequence DisplayName="Get mail details" sap:VirtualizedContainerService.HintSize="264,243" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Get mail details" sap:VirtualizedContainerService.HintSize="264,288" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,10 +121,10 @@
             </Sequence>
           </TryCatch.Try>
           <TryCatch.Catches>
-            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,1052" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -233,7 +233,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[Error_Status = False]" DisplayName="If - Initialization" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[Error_Status = False]" DisplayName="If - Initialization" sap:VirtualizedContainerService.HintSize="264,51" sap2010:WorkflowViewState.IdRef="If_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -252,10 +252,10 @@
                     </ui:InvokeWorkflowFile>
                   </If.Then>
                 </If>
-                <Sequence DisplayName="Mail details" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Mail details" sap:VirtualizedContainerService.HintSize="264,384" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -284,7 +284,7 @@
                     </Assign.Value>
                   </Assign>
                 </Sequence>
-                <TryCatch sap2010:Annotation.AnnotationText="Write process name and start time in log file" DisplayName="2.3 Enter process start time in excel file" sap:VirtualizedContainerService.HintSize="200,93" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch sap2010:Annotation.AnnotationText="Write process name and start time in log file" DisplayName="2.3 Enter process start time in excel file" sap:VirtualizedContainerService.HintSize="264,93" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -404,15 +404,21 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[Error_Status]" DisplayName="If - Get response from Mail subject" sap:VirtualizedContainerService.HintSize="539,517" sap2010:WorkflowViewState.IdRef="If_7">
+                    <If Condition="[Error_Status]" DisplayName="If - Get response from Mail subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Else>
-                        <TryCatch DisplayName="Get response from Mail subject" sap:VirtualizedContainerService.HintSize="414,369" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                        <TryCatch DisplayName="Get response from Mail subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
                             <Sequence DisplayName="Get response from Mail subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_15">
                               <sap:WorkflowViewStateService.ViewState>
@@ -421,46 +427,62 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:Comment sap:VirtualizedContainerService.HintSize="314,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="&quot;Select one Subject / Mail Body&quot;" />
-                              <If Condition="[Received_MailSubject.ToString.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="If_2">
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="489,175" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If Condition="[Received_MailSubject.ToString.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_2">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <If.Then>
+                                        <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[ChangeStatus]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">Yes</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </If.Then>
+                                      <If.Else>
+                                        <If Condition="[Received_MailSubject.ToString.ToUpper.Contains(&quot;NO&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_3">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[ChangeStatus]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">No</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </If.Then>
+                                        </If>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If.Then>
-                                  <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_11">
-                                    <Assign.To>
-                                      <OutArgument x:TypeArguments="x:String">[ChangeStatus]</OutArgument>
-                                    </Assign.To>
-                                    <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">Yes</InArgument>
-                                    </Assign.Value>
-                                  </Assign>
-                                </If.Then>
-                                <If.Else>
-                                  <If Condition="[Received_MailSubject.ToString.ToUpper.Contains(&quot;NO&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_3">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <If.Then>
-                                      <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[ChangeStatus]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">No</InArgument>
-                                        </Assign.Value>
-                                      </Assign>
-                                    </If.Then>
-                                  </If>
-                                </If.Else>
-                              </If>
-                              <If Condition="[Received_MailBody.ToString.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="If - Check Mail Body" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="If_5">
+                              </ui:CommentOut>
+                              <If Condition="[Received_MailBody.ToString.trim.ToUpper.Contains(&quot;YES&quot;)]" DisplayName="If - Check Mail Body" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_5">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -478,7 +500,7 @@
                                   </Assign>
                                 </If.Then>
                                 <If.Else>
-                                  <If Condition="[Received_MailBody.ToString.ToUpper.Contains(&quot;NO&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_4">
+                                  <If Condition="[Received_MailBody.ToString.ToUpper.Trim.Contains(&quot;NO&quot;)]" DisplayName="If - Check subject" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_4">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -501,10 +523,10 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,207" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -512,7 +534,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while retreiving mail details then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while retreiving mail details then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="264,138" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -567,10 +589,10 @@
                         </TryCatch>
                       </If.Else>
                     </If>
-                    <If Condition="[Error_Status]" DisplayName="If - Get Template tabs for reconciliation from Config file" sap:VirtualizedContainerService.HintSize="539,208" sap2010:WorkflowViewState.IdRef="If_8">
+                    <If Condition="[Error_Status]" DisplayName="If - Get Template tabs for reconciliation from Config file" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -596,7 +618,7 @@
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,283" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="264,275" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="TemplateTabs_Reconciliation" />
                                       </Sequence.Variables>
@@ -605,7 +627,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                      <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_7">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[TemplateTabs_Reconciliation]</OutArgument>
                                         </Assign.To>
@@ -613,12 +635,18 @@
                                           <InArgument x:TypeArguments="x:String">["Template Tabs_Reconciliation"]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_TemplateTabs]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="[TemplateTabs_Reconciliation]">
+                                      <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_TemplateTabs]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="[TemplateTabs_Reconciliation]">
                                         <ui:ExcelReadRange.Range>
                                           <InArgument x:TypeArguments="x:String">
                                             <Literal x:TypeArguments="x:String" Value="" />
                                           </InArgument>
                                         </ui:ExcelReadRange.Range>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
                                       </ui:ExcelReadRange>
                                     </Sequence>
                                   </ActivityAction>
@@ -633,10 +661,10 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,222" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -644,7 +672,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while retreiving reports sheet names from config file then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="200,153" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while retreiving reports sheet names from config file then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="264,153" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -699,10 +727,10 @@
                         </TryCatch>
                       </If.Else>
                     </If>
-                    <If Condition="[Error_Status]" DisplayName="If - Change status based on mail response" sap:VirtualizedContainerService.HintSize="539,208" sap2010:WorkflowViewState.IdRef="If_9">
+                    <If Condition="[Error_Status]" DisplayName="If - Change status based on mail response" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -728,7 +756,7 @@
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="316,175" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="222,175" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -795,14 +823,14 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:ExcelReadCell>
-                                              <If Condition="[ReconStatus.Trim = MailReconStatus.Trim]" DisplayName="If - Status" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="If_6">
+                                              <If Condition="[ChangeStatus = &quot;Yes&quot;]" DisplayName="If - Status" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="If_6">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <If.Else>
+                                                <If.Then>
                                                   <ui:ExcelWriteCell Cell="[&quot;J&quot;+dt_ReportStatus.Rows.Count.ToString]" DisplayName="Write Mail Status after reeconciliation" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="[SheetName]" Text="[ChangeStatus.ToString]">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -811,7 +839,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </ui:ExcelWriteCell>
-                                                </If.Else>
+                                                </If.Then>
                                               </If>
                                             </Sequence>
                                           </ActivityAction>
@@ -847,7 +875,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while changing reconciliation status based on mail response then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="200,153" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <Sequence sap2010:Annotation.AnnotationText="If any error occured while changing reconciliation status based on mail response then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="264,153" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -902,6 +930,226 @@
                         </TryCatch>
                       </If.Else>
                     </If>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="739,175" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[Error_Status]" DisplayName="If - Change status based on mail response" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Else>
+                              <TryCatch DisplayName="Change status based on mail response" sap:VirtualizedContainerService.HintSize="592,1435" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <TryCatch.Try>
+                                  <Sequence DisplayName="Change status based on mail response" sap:VirtualizedContainerService.HintSize="574,1208" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Open Bill Payments status file" sap:VirtualizedContainerService.HintSize="552,1084" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" WorkbookPath="[In_BillPayments_StatusFilePath]">
+                                      <ui:ExcelApplicationScope.Body>
+                                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="538,975" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dt_TemplateTabs]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="516,851" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                              <ui:ForEachRow.Body>
+                                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Tabs" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,704" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="x:String" Name="SheetName" />
+                                                      <Variable x:TypeArguments="sd:DataTable" Name="dt_ReportStatus" />
+                                                      <Variable x:TypeArguments="x:String" Name="ReconStatus" />
+                                                      <Variable x:TypeArguments="x:String" Name="MailReconStatus" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign sap:VirtualizedContainerService.HintSize="464,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[Tabs(0).ToString]</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <ui:ExcelReadRange AddHeaders="False" DataTable="[dt_ReportStatus]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" SheetName="[SheetName]">
+                                                      <ui:ExcelReadRange.Range>
+                                                        <InArgument x:TypeArguments="x:String">
+                                                          <Literal x:TypeArguments="x:String" Value="" />
+                                                        </InArgument>
+                                                      </ui:ExcelReadRange.Range>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ui:ExcelReadRange>
+                                                    <ui:ExcelReadCell Cell="[&quot;G&quot;+dt_ReportStatus.Rows.Count.ToString]" DisplayName="Read Reconciliation status" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="ExcelReadCell_3" SheetName="[SheetName]">
+                                                      <ui:ExcelReadCell.Result>
+                                                        <OutArgument x:TypeArguments="x:String">[ReconStatus]</OutArgument>
+                                                      </ui:ExcelReadCell.Result>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ui:ExcelReadCell>
+                                                    <ui:ExcelReadCell Cell="[&quot;J&quot;+dt_ReportStatus.Rows.Count.ToString]" DisplayName="Read Mail Reconciliation status" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="ExcelReadCell_4" SheetName="[SheetName]">
+                                                      <ui:ExcelReadCell.Result>
+                                                        <OutArgument x:TypeArguments="x:String">[MailReconStatus]</OutArgument>
+                                                      </ui:ExcelReadCell.Result>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ui:ExcelReadCell>
+                                                    <If Condition="[ReconStatus.Trim = MailReconStatus.Trim]" DisplayName="If - Status" sap:VirtualizedContainerService.HintSize="464,207" sap2010:WorkflowViewState.IdRef="If_11">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Else>
+                                                        <ui:ExcelWriteCell Cell="[&quot;J&quot;+dt_ReportStatus.Rows.Count.ToString]" DisplayName="Write Mail Status after reeconciliation" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="[SheetName]" Text="[ChangeStatus.ToString]">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </ui:ExcelWriteCell>
+                                                      </If.Else>
+                                                    </If>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </ui:ForEachRow.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:ForEachRow>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ExcelApplicationScope.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:ExcelApplicationScope>
+                                  </Sequence>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="578,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap2010:Annotation.AnnotationText="If any error occured while changing reconciliation status based on mail response then error status will be 'true' and error message will send to customer." DisplayName="if error occurs" sap:VirtualizedContainerService.HintSize="264,153" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <WriteLine sap2010:Annotation.AnnotationText="If error occured, then exact exception will display in output panel." DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="242,118" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[&quot;Execption : &quot;+ exception.tostring]">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </WriteLine>
+                                        <Assign sap2010:Annotation.AnnotationText="Assign Error status as True" sap:VirtualizedContainerService.HintSize="242,87" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[Error_Status]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                          </Assign.Value>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Assign>
+                                        <Assign sap2010:Annotation.AnnotationText="Assign Error Message as &quot;Unable to Change status in Bill payments Status file based on mail response" sap:VirtualizedContainerService.HintSize="242,117" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[Error_Msg]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">["Unable to change reconciliation status based on recon out of balance mail reponse"]</InArgument>
+                                          </Assign.Value>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Assign>
+                                        <WriteLine sap2010:Annotation.AnnotationText="If error occured, then assigned error message will display in output panel." DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="242,118" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[&quot;Error Msg : &quot;+ Error_Msg]">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </WriteLine>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
                   </Sequence>
                   <FlowStep.Next>
                     <FlowStep x:Name="__ReferenceID4">
@@ -911,7 +1159,7 @@
                           <av:Size x:Key="ShapeSize">200,51</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Final mail sequence" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                      <Sequence DisplayName="Final mail sequence" sap:VirtualizedContainerService.HintSize="511,738" sap2010:WorkflowViewState.IdRef="Sequence_22">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="MailSubject_ToSend" />
                           <Variable x:TypeArguments="x:String" Name="MailBody_ToSend" />
@@ -921,18 +1169,18 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[Error_Status]" DisplayName="If - Mial sequence" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_10">
+                        <If Condition="[Error_Status]" DisplayName="If - Mial sequence" sap:VirtualizedContainerService.HintSize="489,432" sap2010:WorkflowViewState.IdRef="If_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Error Mail" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <Sequence DisplayName="Error Mail" sap:VirtualizedContainerService.HintSize="264,284" sap2010:WorkflowViewState.IdRef="Sequence_21">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -941,7 +1189,7 @@
                                   <OutArgument x:TypeArguments="x:String">[MailSubject_ToSend]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">Failure notification for recon out of balance mail response</InArgument>
+                                  <InArgument x:TypeArguments="x:String">["Failure notification - Yes / No email Process"]</InArgument>
                                 </Assign.Value>
                               </Assign>
                               <Assign DisplayName="Mail Body" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_23">
@@ -967,7 +1215,7 @@
                                   <OutArgument x:TypeArguments="x:String">[MailSubject_ToSend]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">["Success Notification - Recon Out Of Balance"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">["Success Notification - Yes / No email"]</InArgument>
                                 </Assign.Value>
                               </Assign>
                               <Assign DisplayName="Mail Body" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_25">
@@ -975,13 +1223,13 @@
                                   <OutArgument x:TypeArguments="x:String">[MailBody_ToSend]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">["Check Bill payments Status file for recon status"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">["Check Bill payments Status file for reconciliation status"]</InArgument>
                                 </Assign.Value>
                               </Assign>
                             </Sequence>
                           </If.Else>
                         </If>
-                        <TryCatch DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                        <TryCatch DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="489,51" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1025,7 +1273,7 @@
                             </Catch>
                           </TryCatch.Catches>
                         </TryCatch>
-                        <TryCatch DisplayName="7.3 Enter Process end time" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                        <TryCatch DisplayName="7.3 Enter Process end time" sap:VirtualizedContainerService.HintSize="489,51" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
